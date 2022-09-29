@@ -1,0 +1,27 @@
+.title {
+    color: var(--title-color);
+    text-align: center;
+}
+
+@media screen and (max-width:1199px) {
+    .title.visible {
+    margin-bottom: 30px;
+}
+}
+@media screen and (min-width:1200px) {
+    .title.visible {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .title {
+        @include font(700, 28px, 33px);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .title {
+        @include font(700, 36px, 42px);
+    }
+}

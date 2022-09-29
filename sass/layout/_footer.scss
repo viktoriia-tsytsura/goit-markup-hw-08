@@ -1,0 +1,218 @@
+.page-footer {
+        background-color: var(--bacground-color-dark);
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+.page-footer__container {
+    display: flex;
+}
+.contacts-media-wrapper {
+    display: flex;
+}
+.contacts-wrapper__logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo__logo-footer {
+    color: var(--color-white);
+}
+
+.contacts-wrapper__address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+}
+ .contacts_wrapper__contacts-list {
+     flex-direction: column;
+     gap: 9px;
+ }
+
+
+.contacts_wrapper__link {
+    color: var(--footer-contacts-color);
+    font-style: normal;
+    line-height: 1.71;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+ .contacts_wrapper__address-link {
+     color: var(--color-white);
+     text-decoration: none;
+     font-style: normal;
+ }
+
+ .contacts_wrapper__address {
+    color: var(--footer-contacts-color);
+    line-height: 1.71;
+    font-weight: 400;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+
+.join-us__subtitle,
+.subscription__subtitle {
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.media-list__link_theme_dark {
+        fill: var(--color-white);
+        background-color: rgba(255, 255, 255, 0.1);
+
+            &:hover,
+            &:focus {
+                background-color: var(--accent-color);
+            }
+    }
+
+
+@media screen and (max-width: 767px) {
+    .page-footer__container {
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+            }
+    .contacts-media-wrapper {
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+    .contacts-wrapper__logo {
+        text-align: center;
+            }
+    
+    .contacts-wrapper__address {
+        align-items: center;
+            }
+    
+    .contacts_wrapper__contacts-list {
+        align-items: center;
+            }
+    .join-us__subtitle,
+    .subscription__subtitle {
+        text-align: center;
+    }
+        }
+    
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .page-footer__container {
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+    .contacts-media-wrapper {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .join-us__subtitle,
+    .subscription__subtitle {
+            text-align: center;
+        }
+   
+}
+    
+@media screen and (min-width: 1200px) {
+    .page-footer__container {
+        align-items: baseline;
+        gap: 93px;
+ }
+    .contacts-media-wrapper {
+        align-items: baseline;
+        gap: 70px;
+    }
+}
+
+
+
+// .page-footer {
+//     background-color: var(--bacground-color-dark);
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
+
+// .page-footer__container {
+//     display: flex;
+// }
+
+
+// .contacts-wrapper {
+//     margin-right: 70px;
+// }
+
+// .contacts-wrapper__logo {
+//     display: block;
+//     margin-bottom: 20px;
+// }
+
+// .logo__logo-footer {
+//     color: var(--color-white);
+// }
+
+// .contacts-wrapper__address {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 9px;
+
+// }
+//  .contacts_wrapper__contacts-list {
+//      flex-direction: column;
+//      gap: 9px;
+//  }
+
+
+// .contacts_wrapper__link {
+//     color: var(--footer-contacts-color);
+//     font-style: normal;
+//     line-height: 1.71;
+//     font-weight: 400;
+//     letter-spacing: 0.03em;
+
+// }
+
+//  .contacts_wrapper__address {
+//     color: var(--footer-contacts-color);
+//     font-style: normal;
+//     line-height: 1.71;
+//     font-weight: 400;
+//     text-decoration: none;
+
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//         &:hover,
+//         &:focus {
+//             color: var(--accent-color);
+//         }
+// }
+
+//  .contacts_wrapper__address {
+//     color: var(--color-white);
+// }
+
+// .join-us__subtitle,
+// .subscription__subtitle {
+//     color: var(--color-white);
+//     margin-bottom: 20px;
+// }
+
+// .media-list__link_theme_dark {
+//     fill: var(--color-white);
+//     background-color: rgba(255, 255, 255, 0.1);
+
+//         &:hover,
+//         &:focus {
+//             background-color: var(--accent-color);
+//         }
+// }
+// .subscription {
+//     margin-left: auto;
+// }
