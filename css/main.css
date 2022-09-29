@@ -652,6 +652,15 @@ body {
   margin-left: auto;
 }
 
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  color: var(--color-white);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 767px) {
   .hero {
     padding-top: 118px;
@@ -666,16 +675,7 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.images/bg-mobile@2x.jpg");
   }
 }
-.hero__title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  color: var(--color-white);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 767px), screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
     max-width: 360px;
     font-weight: 900;
