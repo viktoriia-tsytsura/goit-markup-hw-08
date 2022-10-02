@@ -277,7 +277,7 @@ body {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus + .form__icon {
+.form__input:focus + .form__icon {
   fill: var(--accent-color);
 }
 
@@ -314,6 +314,7 @@ body {
 .form__checkbox-wrapper {
   position: relative;
   margin-right: 7px;
+  display: flex;
 }
 
 .form__check-icon {
@@ -331,6 +332,7 @@ body {
 
 .form__uncheck-icon {
   fill: var(--title-color);
+  border: none;
 }
 
 .form__checkbox-link {
@@ -358,6 +360,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    overflow: scroll;
     position: fixed;
     top: 0;
     left: 0;
@@ -380,6 +383,7 @@ body {
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
+    height: 100%;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -394,11 +398,15 @@ body {
   .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
     fill: var(--accent-color);
   }
+  .mobile-menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
   .mobile-menu__nav-list {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-bottom: 306px;
   }
   .mobile-menu__nav-link {
     font-weight: 500;
@@ -430,16 +438,20 @@ body {
   .mobile-menu__contacts-list-link_accent {
     color: var(--accent-color);
   }
+  .mobile-menu__bottom {
+    margin-top: auto;
+  }
   .mobile-menu__media {
     display: flex;
+    margin-top: auto;
   }
   .mobile-menu__media li:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   .mobile-menu__media-link {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2222222222;
+    font-size: 10px;
+    line-height: 1.8;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: var(--accent-color);
