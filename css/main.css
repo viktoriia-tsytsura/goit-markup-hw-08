@@ -1045,7 +1045,7 @@ body {
     align-items: center;
   }
   .contacts-media-wrapper {
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
   }
   .join-us__subtitle,
